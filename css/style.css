@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    /*background: linear-gradient(to right,  #ff7e5f, #feb47b, #ff6a00);*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /*background-color: #333;*/
+    background: linear-gradient(to right,  #000, #333, #000);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo a {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .logo a :hover {
+    color:#feb47b;
+}
+
+header .navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .social-links a {
+    margin-left: 10px;
+    color: #fff;
+    font-size:1.2em;
+    text-decoration: none;
+}
+
+header .social-links img {
+    width: 25px;
+    height: 25px;
+}
+
+.main-hero-section {
+    height: 70vh; /* Full height */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.skills {
+    height: auto; /* Full height */
+    background: linear-gradient(to right, #ffffff, #fde4d1, #ffffff); /* Example gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.skills-section {
+    /*background-color: #f4f4f4; /* Light background for contrast */
+    background: linear-gradient(to right, #ffffff, #fde4d1, #ffffff); /* Example gradient */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section-heading {
+    margin-bottom: 15px;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap; /* Allows tags to wrap to the next line */
+}
+
+.tag {
+    background-color: #ffb75f; /* Bootstrap primary color */
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px; /* Rounded corners for tags */
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.tag:hover {
+    background-color: #a40f0f; /* Darker shade on hover */
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    /*background-color: #333;*/
+    background: linear-gradient(to right,  #000, #333, #000);
+    color: #fff;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #fff;
+    font-size:1.2em;
+    text-decoration: none;
+}
+
+
+footer .copyright {
+    margin-top: 10px;
+}
+
+footer .social-links img {
+    width: 25px;
+    height: 25px;
+}
+
