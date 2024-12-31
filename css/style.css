@@ -22,14 +22,26 @@ header {
     z-index: 1000;
 }
 
+header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header .logo a {
     font-size: 1.5em;
+    margin-left: 10px;
     color: #fff;
     text-decoration: none;
 }
 
 header .logo a :hover {
-    color:#feb47b;
+    color:#ff9c1b;
+}
+
+header .logo:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.05);
 }
 
 header .navbar ul {
@@ -43,6 +55,12 @@ header .navbar ul li a {
     color: #fff;
 }
 
+header .navbar ul li p:hover {
+    color: #7ff7fd;
+    transition-duration: 0.5s;
+    transform: scale(1.15);
+}
+
 header .social-links a {
     margin-left: 10px;
     color: #fff;
@@ -53,6 +71,12 @@ header .social-links a {
 header .social-links img {
     width: 25px;
     height: 25px;
+    transition: text-shadow 0.3s, transform 0.3s;
+}
+
+header .social-links img:hover {
+    transform: scale(1.15);
+    transition-duration: 0.5s;
 }
 
 .main-hero-section {
@@ -77,7 +101,7 @@ header .social-links img {
 
 .skills-section {
     /*background-color: #f4f4f4; /* Light background for contrast */
-    background: linear-gradient(to right, #ffffff, #fde4d1, #ffffff); /* Example gradient */
+    background: linear-gradient(to right, #ffffff, #ffecde, #ffffff); /* Example gradient */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -86,6 +110,11 @@ header .social-links img {
 .skills-section-heading {
     margin-bottom: 15px;
 }
+
+.skills-section-heading h3 {
+    margin-top: 5px;
+}
+
 
 .skills-tags {
     display: flex;
@@ -99,12 +128,130 @@ header .social-links img {
     margin: 5px;
     border-radius: 20px; /* Rounded corners for tags */
     font-size: 14px;
-    transition: background-color 0.3s;
+    transition: background-color 1s;
+    
 }
 
 .tag:hover {
     background-color: #a40f0f; /* Darker shade on hover */
     color: rgb(255, 255, 255);
+}
+
+.exp {
+    min-height: 60vh; /* Full height */
+    background: linear-gradient(to right,  #10003a, #150055, #10003a); /* Example gradient */
+    color: rgb(0, 0, 0);
+}
+
+.exp-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color:rgb(252, 252, 252)
+}
+
+.exp-heading a {
+    color:rgb(248, 248, 248);
+    text-decoration: none;
+}
+
+.exp-heading a:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.15);
+}
+
+.exp-content {
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 10px;
+}
+
+.exp-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.exp-button button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.exp-button button:hover {
+    background: linear-gradient(to right, #1c0062, #0036b3, #1c0062);
+    color: #fff5ee;
+    transition-duration: 0.5s;
+    transform: scale(1.15);
+}
+
+.exp-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    width: 500px;
+    min-width: 500px;
+    min-height: 100px;
+    overflow: hidden; /* Prevent overflow of description */
+    overflow-y: auto;
+    scrollbar-width: none;
+    z-index: 1;
+}
+
+.exp-line{
+    position: absolute; /* Positioning the line absolutely */
+    top: 50%; /* Center the line vertically */
+    left: 500px; /* Start from the left */
+    right: 500px; /* Extend to the right */
+    height: 8px; /* Thickness of the line */
+    background-color: #fdfdfd; /* Color of the line */
+    z-index: 0; /* Ensure the line is behind the cards */
+}
+
+.card-title {
+    margin: 0;
+}
+
+.duration {
+    color: #666;
+    margin: 5px 0;
+}
+
+.description {
+    display: none; /* Hide description by default */
+    margin-top: 10px;
+}
+
+.exp-card:hover {
+    height: 150px;
+    transition-duration: 1s;
+}
+
+.exp-card:hover .description{
+    display: block;
+    color: #000;
+}
+
+.project-showcase {
+    min-height: 46vh; /* Full height */
+    background: linear-gradient(to right, #2ba3c1, #6ae1ff, #2ba3c1); /* Example gradient */
+    color: rgb(0, 0, 0);
+
 }
 
 footer {
@@ -132,3 +279,7 @@ footer .social-links img {
     height: 25px;
 }
 
+footer .social-links img:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.15);
+}
