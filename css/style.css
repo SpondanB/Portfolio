@@ -15,7 +15,7 @@ header {
     align-items: center;
     padding: 20px;
     /*background-color: #333;*/
-    background: linear-gradient(to right,  #000, #333, #000);
+    background: linear-gradient(to right,  #000, #222222, #000);
     color: #fff;
     position: sticky;
     top: 0;
@@ -80,16 +80,28 @@ header .social-links img:hover {
 }
 
 .main-hero-section {
-    height: 70vh; 
-    overflow: hidden; /* Hide overflow */
+    min-height: 70vh; 
+    overflow: hidden; /* Hide overflow *
     background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example gradient */
+    background: linear-gradient(to right,  #000, #222, #000);
+    color: whitesmoke;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.main-sec-content {
+    max-width: 80vw;
+    font-size: x-large;
 }
 
 
 
 .skills {
-    height: auto; /* Full height */
+    height: auto; /* Full height *
     background: linear-gradient(to right, #ffffff, #fde4d1, #ffffff); /* Example gradient */
+    background: linear-gradient(to right,  #000, #222, #000);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,11 +110,13 @@ header .social-links img:hover {
 }
 
 .skills-section {
-    /*background-color: #f4f4f4; /* Light background for contrast */
+    /*background-color: #f4f4f4; /* Light background for contrast *
     background: linear-gradient(to right, #ffffff, #ffecde, #ffffff); /* Example gradient */
+    background: linear-gradient(to right,  #000, #222, #000);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    /*border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
 }
 
 .skills-section-heading {
@@ -136,8 +150,9 @@ header .social-links img:hover {
 }
 
 .exp {
-    min-height: 60vh; /* Full height */
+    min-height: 60vh; /* Full height *
     background: linear-gradient(to right,  #10003a, #150055, #10003a); /* Example gradient */
+    background: linear-gradient(to right,  #000, #222, #000);
     color: rgb(0, 0, 0);
 }
 
@@ -172,27 +187,6 @@ header .social-links img:hover {
     padding: 10px;
 }
 
-.exp-button {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    align-items: center;
-}
-
-.exp-button button {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-.exp-button button:hover {
-    background: linear-gradient(to right, #1c0062, #0036b3, #1c0062);
-    color: #fff5ee;
-    transition-duration: 0.5s;
-    transform: scale(1.15);
-}
-
 .exp-card {
     background-color: #fff;
     border-radius: 8px;
@@ -211,11 +205,18 @@ header .social-links img:hover {
     z-index: 1;
 }
 
+.breaker {
+    top: 50%;
+    left: 10vb;
+    height: 2px;
+    background-color: hsl(0, 0%, 59%);
+}
+
 .exp-line{
     position: absolute; /* Positioning the line absolutely */
     top: 50%; /* Center the line vertically */
     left: 500px; /* Start from the left */
-    right: 500px; /* Extend to the right */
+    width: 500px; /*(no of cards - 1) * 500 */
     height: 8px; /* Thickness of the line */
     background-color: #fdfdfd; /* Color of the line */
     z-index: 0; /* Ensure the line is behind the cards */
@@ -248,16 +249,46 @@ header .social-links img:hover {
 
 .project-showcase {
     min-height: 46vh; /* Full height */
-    background: linear-gradient(to right, #2ba3c1, #6ae1ff, #2ba3c1); /* Example gradient */
-    color: rgb(0, 0, 0);
+    background: linear-gradient(to right,  #000, #222, #000);
+    color: whitesmoke;
+}
 
+.project-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-heading a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.project-heading a:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.15);
+}
+
+.project-contents {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.project-card {
+    width: 250px;
+    height: 250px;
+    margin:10px;
+    background-color: wheat;
+    border-radius: 5%;
 }
 
 footer {
     text-align: center;
     padding: 20px;
     /*background-color: #333;*/
-    background: linear-gradient(to right,  #000, #333, #000);
+    background: linear-gradient(to right,  #000, #222, #000);
     color: #fff;
 }
 
