@@ -10,11 +10,26 @@
 body {
     font-family: monospace;
     /*background: linear-gradient(to right,  #ff7e5f, #feb47b, #ff6a00);*/
-    background-color: #000;
+    background: linear-gradient(to right,  #000, #222222, #000);
 }
 
 main{
     min-height: 100vh;
+}
+
+#first-page {
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 header {
@@ -44,7 +59,7 @@ header .logo a {
 }
 
 header .logo a :hover {
-    color:#ff9c1b;
+    color:#ffb75f;
 }
 
 header .logo:hover {
@@ -64,7 +79,7 @@ header .navbar ul li a {
 }
 
 header .navbar ul li p:hover {
-    color:#ff9c1b;
+    color:#ffb75f;
     transition-duration: 0.5s;
     transform: scale(1.15);
 }
@@ -85,6 +100,10 @@ header .social-links img {
 header .social-links img:hover {
     transform: scale(1.15);
     transition-duration: 0.5s;
+}
+
+#current-tab {
+    color: #ffb75f;
 }
 
 .main-hero-section {
@@ -153,7 +172,7 @@ header .social-links img:hover {
 }
 
 .tag:hover {
-    background-color: #a40f0f; /* Darker shade on hover */
+    background-color: orangered; /* Darker shade on hover */
     color: rgb(255, 255, 255);
 }
 

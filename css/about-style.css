@@ -1,0 +1,46 @@
+.about-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: whitesmoke;
+}
+
+.about-image {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-image img{
+    height: 90%;
+    border-radius: 10px;
+}
+
+.about-heading-title {
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.resume a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.resume h2 {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(0, 141, 104);
+}
+
+.resume h2:hover {
+    background-color: rgb(143, 255, 225);
+    color: black;
+    transition-duration: 0.5s;
+    transform: scale(1.05);
+}

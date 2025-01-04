@@ -81,7 +81,7 @@ main {
     display: flex;
     flex-direction: column;
     background: #333;
-    color: gray;
+    color: rgb(222, 222, 222);
     border-radius: 10px;
     padding: 10px;
 }
