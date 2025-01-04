@@ -1,3 +1,6 @@
+/*-----------------------------------------------------------*/
+/* INDEX PAGE STYLES - GENERAL*/
+/*-----------------------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +10,11 @@
 body {
     font-family: monospace;
     /*background: linear-gradient(to right,  #ff7e5f, #feb47b, #ff6a00);*/
+    background-color: #000;
+}
+
+main{
+    min-height: 100vh;
 }
 
 header {
@@ -56,7 +64,7 @@ header .navbar ul li a {
 }
 
 header .navbar ul li p:hover {
-    color: #7ff7fd;
+    color:#ff9c1b;
     transition-duration: 0.5s;
     transform: scale(1.15);
 }
@@ -273,6 +281,7 @@ header .social-links img:hover {
 .project-contents {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 10px;
 }
 
@@ -280,8 +289,60 @@ header .social-links img:hover {
     width: 250px;
     height: 250px;
     margin:10px;
-    background-color: wheat;
+    background-color: rgb(241, 255, 252);
     border-radius: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-card-heading {
+    padding: 10px;
+    color: #000;
+    text-align: center;
+
+}
+
+.project-card-content {
+    padding: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 150px;
+}
+
+.project-card-content ul {
+    padding: 20px;
+}
+
+.project-card-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.project-card-link a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.repo-link {
+    background-color: #0f7f85;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+.repo-link:hover {
+    background-color: #155558;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transform: scale(1.15);
 }
 
 footer {
@@ -312,4 +373,28 @@ footer .social-links img {
 footer .social-links img:hover {
     transition-duration: 0.5s;
     transform: scale(1.15);
+}
+
+.animated-underline {
+    position: relative;
+    display: inline-block; /* Ensures the underline is only as wide as the text */
+    padding: 10px;
+    color: #ebebeb; /* Text color *
+    font-size: 24px; /* Font size */
+}
+
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Position the underline at the bottom */
+    width: 100%; /* Full width */
+    height: 2px; /* Thickness of the underline */
+    background: #007BFF; /* Color of the underline */
+    transform: scaleX(0); /* Start with no width */
+    transition: transform 0.3s ease; /* Animation effect */
+}
+
+.animated-underline:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
 }
