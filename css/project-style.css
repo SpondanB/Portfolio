@@ -37,8 +37,23 @@
 }
 
 .card-full-content {
-    background-color: #cdcdcd;
+    background-color: #ffd57b;
     border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-full-content img{
+    height: 300px;
+    top: 50%;
+}
+
+.card-full-content ol {
+    padding: 20px;
+}
+
+.card-full-content ul {
     padding: 10px;
 }
 

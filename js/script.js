@@ -1,15 +1,15 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
     "Hi, I am Spondan Bandyopadhyay.",
-    "I am an aspiring data scientist, looking to getting to know about the latest technology and systems.",
-    "Lets connect if you are interested in that kindof stuff"
+    "I am a Computer Science graduate with a strong passion for Data Science, AI and ML.",
+    "I'm always learning about new developments in these areas and would love to connect with others interested in using data and AI to solve real-world problems!"
 );
 var bText = new Array(
-    "I am an aspiring data scientist, looking to getting to know about the latest technology and systems.",
-    "Lets connect if you are interested in that kindof stuff.",
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nemo fugiat tenetur quia quis quidem, perspiciatis, quos mollitia omnis numquam, amet consequatur harum incidunt corrupti in quisquam ratione assumenda quasi."
+    "Hi, I am Spondan Bandyopadhyay.",
+    "I am a Computer Science graduate with a strong passion for Data Science, Artificial Intelligence and Machine Learning.",
+    "I’m constantly exploring new advancements in these fields and am excited to connect with others who share an interest in leveraging data and AI to solve real-world problems!"
 );
-var iSpeed = 100; // time delay of print out
+var iSpeed = 60; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
 var jArrLength = bText[0].length;
@@ -34,7 +34,7 @@ function typewriter()
         iIndex++;
         if ( iIndex != aText.length ) {
             iArrLength = aText[iIndex].length;
-            setTimeout("typewriter()", 500);
+            setTimeout("typewriter()", 250);
         }
     } 
     else {
