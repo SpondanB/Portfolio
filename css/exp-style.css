@@ -86,10 +86,25 @@ main {
     padding: 10px;
 }
 
+.info ul {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /* Title of the card */
 .title {
     color: orangered;
     position: relative;
+}
+
+.title-date {
+    color: orangered;
+    position: relative;
+}
+
+/* text right if the card is even  */
+.card:nth-child(even) > .info > .title-date {
+    text-align: right;
 }
 
 /* Timeline dot  */
